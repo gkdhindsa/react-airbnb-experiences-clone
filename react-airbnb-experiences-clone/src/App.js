@@ -8,7 +8,13 @@ function App() {
       <Navbar/>
       <Hero/>
       <div>
-        <Card></Card>
+        <Card 
+          img="./katie.png"
+          rating="5.0"
+          reviewCount="30"
+          title="Something with Katie"
+          price="136"
+        />
       </div>
     </div>
   );
