@@ -1,28 +1,28 @@
 import star from '../star.png'
 
-function Card(props) {
-    let image=props.img
+function Card({img, rating, reviewCount, title, price, country}) {
+    
     return ( 
-        <div className="container">
+      
             <div className="card">
                 <div className="card-image-container">
-                    <img src={image} alt="katie" className='card-image'/>
+                    <img src={`./images/${img}`} alt="katie" className='card-image'/>
                 </div>
                 <div className="card-content">
                     <div className="rating">
                         <img src={star} alt="star" className='star'/>
-                        <p className="rating">{props.rating} </p>
-                        <p className="review-count"> ({props.reviewCount}) | USA</p>
+                        <p className="rating">{rating} </p>
+                        <p className="review-count"> ({reviewCount}) | {country}</p>
                     </div>
                     <p className='card-text'>
-                        {props.title}
+                        {title}
                     </p>
                     <p className="card-price">
-                        <strong>From ${props.price} </strong>/ person
+                        <strong>From ${price} </strong>/ person
                     </p>
                 </div>
             </div>
-        </div>
+      
         
      );
 }

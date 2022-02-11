@@ -37,6 +37,7 @@ p{
 }
 .card{
   width: 300px;
+  margin: 1rem 1rem 1rem 0;
 }
 .rating{
   display: flex;
@@ -63,4 +64,10 @@ p{
 }
 .review-count{
   color: #918E9B;
+}
+.card-container{
+  display: flex;
+}
+.card-image-container, .card-image{
+  width: 100%;
 }
