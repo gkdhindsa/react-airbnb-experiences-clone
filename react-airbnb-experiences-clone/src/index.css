@@ -38,6 +38,14 @@ p{
 .card{
   width: 300px;
   margin: 1rem 1rem 1rem 0;
+  position: relative;
+}
+.badge{
+  position: absolute;
+  margin: 1rem;
+  padding:5px;
+  border-radius: 5px;
+  background-color: #fff;
 }
 .rating{
   display: flex;
@@ -67,6 +75,7 @@ p{
 }
 .card-container{
   display: flex;
+  overflow-x: scroll;
 }
 .card-image-container, .card-image{
   width: 100%;

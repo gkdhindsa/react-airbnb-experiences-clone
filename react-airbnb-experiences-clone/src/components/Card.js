@@ -1,10 +1,20 @@
 import star from '../star.png'
 
-function Card({img, rating, reviewCount, title, price, country}) {
-    
+function Card({img, rating, reviewCount, title, price, country, openSpots}) {
+    let badgeText
+    if(openSpots===0)
+    {
+        badgeText="SOLD OUT"
+    }
+    else if(country==="Online")
+    {
+        badgeText="ONLINE"
+    }
     return ( 
-      
+    
             <div className="card">
+                {badgeText && <div className="badge">{badgeText}</div>}
+                
                 <div className="card-image-container">
                     <img src={`./images/${img}`} alt="katie" className='card-image'/>
                 </div>
